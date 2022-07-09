@@ -32,16 +32,45 @@ body{
 
 		&__body {
 		}
+        &__numbers {
+        }
 }
 .days {
+    padding: 0 0 5px 0;
 		&__item {
-            padding: 10px;
+            width: 50px;
+            line-height: 40px;
+            text-align: center;
             background-color: #5F7ADB;
             border-radius: 5px;
-            margin: 0 10px 0 0;
+            margin: 0 5px 0 0;
             font-size: 20px;
             &:last-child{
                 margin: 0;
             }
 		}
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    &__item {
+        color: #26292B;
+        text-align: center;
+        width: 50px;
+        line-height: 40px;
+        font-size: 20px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+}
+.numbers__item._today{
+    background-color: #5F7ADB;
+    border-radius: 5px;
+    color: #FFF;
+}
+.numbers__item._start{
+    grid-column: 7;
 }
