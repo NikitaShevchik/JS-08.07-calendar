@@ -8,7 +8,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -80,22 +79,16 @@ body {
 }
 
 .main {
-  font-family: 'Kantumruy Pro', sans-serif;
+  font-family: "Kantumruy Pro", sans-serif;
 }
 
 .content {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .calendar {
@@ -103,21 +96,13 @@ body {
   border-radius: 5px;
   padding: 10px;
 }
-
 .calendar__days {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .days {
   padding: 0 0 5px 0;
 }
-
 .days__item {
   width: 50px;
   line-height: 40px;
@@ -127,19 +112,15 @@ body {
   margin: 0 5px 0 0;
   font-size: 20px;
 }
-
 .days__item:last-child {
   margin: 0;
 }
 
 .numbers {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 5px;
 }
-
 .numbers__item {
   color: #26292B;
   text-align: center;
@@ -147,7 +128,6 @@ body {
   line-height: 40px;
   font-size: 20px;
 }
-
 .numbers__item:last-child {
   margin: 0;
 }
@@ -159,6 +139,5 @@ body {
 }
 
 .numbers__item._start {
-  -ms-grid-column: 7;
-  grid-column: 7;
+  grid-column-end: 6;
 }
