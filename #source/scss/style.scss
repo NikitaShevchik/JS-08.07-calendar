@@ -1,0 +1,47 @@
+// Обнуление стилей
+@import "nullstyle.scss";
+// Подключение шрифтов
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap');
+//SCSS
+body{
+    background-color: #26292B;
+    color: #FFF;
+}
+.main {
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar {
+    background-color: #A2B2EE;
+    border-radius: 5px;
+    padding: 10px;
+		&__head {
+		}
+
+		&__days {
+            display: flex;
+            flex-direction: row;
+		}
+
+		&__body {
+		}
+}
+.days {
+		&__item {
+            padding: 10px;
+            background-color: #5F7ADB;
+            border-radius: 5px;
+            margin: 0 10px 0 0;
+            font-size: 20px;
+            &:last-child{
+                margin: 0;
+            }
+		}
+}
