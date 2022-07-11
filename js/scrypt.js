@@ -56,19 +56,17 @@ calendarGenerator(month, day, arrayDates.months, arrayDates.daysNumbers)
 
 arrowNext.addEventListener('click', function () {
     month = month + 1;
-    if (month > 11){
+    if (month > 11) {
         month = 0;
         year++;
     }
     calendarGenerator(month, day, arrayDates.months, arrayDates.daysNumbers)
 })
-arrowPrev.addEventListener('click', function(){
+arrowPrev.addEventListener('click', function () {
     month = month - 1;
-    if (month < 0){
+    if (month < 0) {
         month = 11;
         year--;
     }
     calendarGenerator(month, day, arrayDates.months, arrayDates.daysNumbers)
 })
-
-// сделать нормальное выравнивание дней

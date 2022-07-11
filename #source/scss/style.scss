@@ -23,18 +23,10 @@ body{
     background-color: #A2B2EE;
     border-radius: 5px;
     padding: 10px;
-		&__head {
-		}
-
 		&__days {
             display: flex;
             flex-direction: row;
 		}
-
-		&__body {
-		}
-        &__numbers {
-        }
         &__date{
             text-align: right;
             padding: 0 0 10px 0;
@@ -95,7 +87,6 @@ body{
             color: #5F7ADB;
         }
     }
-
     &__right {
         cursor: pointer;
         transition: all 0.2s linear;
