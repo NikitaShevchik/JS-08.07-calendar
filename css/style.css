@@ -87,6 +87,7 @@ body {
   margin: 0 auto;
   padding: 50px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -100,10 +101,16 @@ body {
   display: flex;
   flex-direction: row;
 }
+.calendar__date {
+  text-align: right;
+  padding: 0 0 10px 0;
+}
+
 .days {
   padding: 0 0 5px 0;
 }
 .days__item {
+  text-transform: capitalize;
   width: 50px;
   line-height: 40px;
   text-align: center;
@@ -140,4 +147,32 @@ body {
 
 .numbers__item._start {
   grid-column-end: 6;
+}
+
+.navigator {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+}
+.navigator__left {
+  margin: 0 30px 0 0;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.navigator__left:hover {
+  transition: all 0.2s linear;
+  color: #5F7ADB;
+}
+.navigator__right {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.navigator__right:hover {
+  transition: all 0.2s linear;
+  color: #5F7ADB;
 }
